@@ -366,6 +366,36 @@ const App = () => {
               <p className="text-gray-100 leading-relaxed">
                 {t("footer.description")}
               </p>
+              {/* Redes Sociais */}
+<div className="mt-8 flex justify-center gap-6">
+  <a
+    href="https://www.instagram.com/suaempresa"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Instagram"
+    className="text-green-200 hover:text-white transition-colors duration-300 text-xl"
+  >
+    <FaInstagram />
+  </a>
+  <a
+    href="https://www.linkedin.com/in/suaempresa"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="LinkedIn"
+    className="text-green-200 hover:text-white transition-colors duration-300 text-xl"
+  >
+    <FaLinkedinIn />
+  </a>
+  <a
+    href="https://www.facebook.com/suaempresa"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Facebook"
+    className="text-green-200 hover:text-white transition-colors duration-300 text-xl"
+  >
+    <FaFacebookF />
+  </a>
+</div>
             </div>
 
             {/* Coluna de Links */}
@@ -413,36 +443,6 @@ const App = () => {
             © {new Date().getFullYear()} DKdevs. {t("footer.rights")}
           </div>
         </div>
-        {/* Redes Sociais */}
-<div className="mt-8 flex justify-center gap-6">
-  <a
-    href="https://www.instagram.com/suaempresa"
-    target="_blank"
-    rel="noopener noreferrer"
-    aria-label="Instagram"
-    className="text-green-200 hover:text-white transition-colors duration-300 text-xl"
-  >
-    <FaInstagram />
-  </a>
-  <a
-    href="https://www.linkedin.com/in/suaempresa"
-    target="_blank"
-    rel="noopener noreferrer"
-    aria-label="LinkedIn"
-    className="text-green-200 hover:text-white transition-colors duration-300 text-xl"
-  >
-    <FaLinkedinIn />
-  </a>
-  <a
-    href="https://www.facebook.com/suaempresa"
-    target="_blank"
-    rel="noopener noreferrer"
-    aria-label="Facebook"
-    className="text-green-200 hover:text-white transition-colors duration-300 text-xl"
-  >
-    <FaFacebookF />
-  </a>
-</div>
 
       </footer>
 
