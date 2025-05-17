@@ -10,9 +10,6 @@ import {
   FaBrain,
   FaBars,
   FaTimes,
-  FaInstagram,
-  FaLinkedinIn,
-  FaFacebookF
 } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
 import "./i18n";
@@ -29,112 +26,125 @@ const App = () => {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const navItems = [
-  { href: "#quemsomos", label: t("nav.about") },
-  { href: "#especialidades", label: t("nav.specialties") },
-  { href: "#ia", label: "IA" }, // Se quiser internacionalizar, adicione em `t("nav.ia")`
-  { href: "#empresas", label: t("nav.clients") },
-  { href: "#produtos", label: t("nav.products") },
-  { href: "#blip", label: t("nav.partner") },
-  { href: "/status", label: "Status" },
-];
+    { href: "#quemsomos", label: t("nav.about") },
+    { href: "#especialidades", label: t("nav.specialties") },
+    { href: "#ia", label: "IA" }, // Se quiser internacionalizar, adicione em `t("nav.ia")`
+    { href: "#empresas", label: t("nav.clients") },
+    { href: "#produtos", label: t("nav.products") },
+    { href: "#blip", label: t("nav.partner") },
+    {
+      href: "https://monitor.dkdevs.com.br/status/services",
+      label: "Status",
+      external: true,
+    },
+  ];
 
   return (
     <div className="font-sans bg-gray-50 text-gray-800">
-       <nav className="sticky top-0 z-50 bg-white shadow-md py-4 px-6 flex justify-between items-center max-w-7xl mx-auto">
-      {/* Logo */}
-      <div className="flex items-center h-10">
-        <img
-          src="https://onyedkfjdkplbaxpetln.supabase.co/storage/v1/object/public/imagens//logodkteste.png"
-          alt="Logo DKdevs"
-          className="h-full w-auto object-contain"
-        />
-      </div>
-
-      {/* Desktop Menu */}
-      <ul className="hidden md:flex space-x-6 text-sm font-medium text-gray-600">
-         {navItems.map((item) => (
-    <li key={item.href}>
-      <a href={item.href}>{item.label}</a>
-    </li>
-  ))}
-      </ul>
-
-      {/* Language Selector (desktop) */}
-      <div className="relative hidden md:block">
-        <button
-          onClick={() => {
-            const menu = document.getElementById("lang-menu");
-            if (menu) menu.classList.toggle("hidden");
-          }}
-          className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white border shadow hover:bg-gray-100 focus:outline-none"
-          aria-label="Selecionar idioma"
-        >
+      <nav className="sticky top-0 z-50 bg-white shadow-md py-4 px-6 flex justify-between items-center max-w-7xl mx-auto">
+        {/* Logo */}
+        <div className="flex items-center h-10">
           <img
-            src={
-              i18n.language === "pt"
-                ? "https://flagcdn.com/w20/br.png"
-                : i18n.language === "en"
-                ? "https://flagcdn.com/w20/us.png"
-                : "https://flagcdn.com/w20/es.png"
-            }
-            alt={i18n.language}
-            className="w-5 h-auto rounded"
+            src="https://onyedkfjdkplbaxpetln.supabase.co/storage/v1/object/public/imagens//logodkteste.png"
+            alt="Logo DKdevs"
+            className="h-full w-auto object-contain"
           />
+        </div>
+
+        {/* Desktop Menu */}
+        <ul className="hidden md:flex space-x-6 text-sm font-medium text-gray-600">
+          {navItems.map((item) => (
+            <li key={item.href}>
+              <a href={item.href}>{item.label}</a>
+            </li>
+          ))}
+        </ul>
+
+        {/* Language Selector (desktop) */}
+        <div className="relative hidden md:block">
+          <button
+            onClick={() => {
+              const menu = document.getElementById("lang-menu");
+              if (menu) menu.classList.toggle("hidden");
+            }}
+            className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white border shadow hover:bg-gray-100 focus:outline-none"
+            aria-label="Selecionar idioma"
+          >
+            <img
+              src={
+                i18n.language === "pt"
+                  ? "https://flagcdn.com/w20/br.png"
+                  : i18n.language === "en"
+                  ? "https://flagcdn.com/w20/us.png"
+                  : "https://flagcdn.com/w20/es.png"
+              }
+              alt={i18n.language}
+              className="w-5 h-auto rounded"
+            />
+          </button>
+
+          <div
+            id="lang-menu"
+            className="hidden absolute mt-2 right-0 w-36 bg-white border border-gray-200 rounded-md shadow-lg z-50"
+          >
+            <ul className="py-1 text-sm text-gray-700">
+              {[
+                { code: "pt", label: "Português", flag: "br" },
+                { code: "en", label: "English", flag: "us" },
+                { code: "es", label: "Español", flag: "es" },
+              ].map(({ code, label, flag }) => (
+                <li key={code}>
+                  <button
+                    onClick={() => {
+                      i18n.changeLanguage(code);
+                      document
+                        .getElementById("lang-menu")
+                        ?.classList.add("hidden");
+                    }}
+                    className="flex items-center w-full px-4 py-2 hover:bg-gray-100"
+                  >
+                    <img
+                      src={`https://flagcdn.com/w20/${flag}.png`}
+                      alt={label}
+                      className="mr-2"
+                    />
+                    {label}
+                  </button>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+
+        {/* Mobile Menu Toggle */}
+        <button
+          className="md:hidden text-gray-600 text-2xl"
+          onClick={() => setMobileMenuOpen(!isMobileMenuOpen)}
+          aria-label="Menu"
+        >
+          {isMobileMenuOpen ? <FaTimes /> : <FaBars />}
         </button>
 
-        <div
-          id="lang-menu"
-          className="hidden absolute mt-2 right-0 w-36 bg-white border border-gray-200 rounded-md shadow-lg z-50"
-        >
-          <ul className="py-1 text-sm text-gray-700">
-            {[
-              { code: "pt", label: "Português", flag: "br" },
-              { code: "en", label: "English", flag: "us" },
-              { code: "es", label: "Español", flag: "es" },
-            ].map(({ code, label, flag }) => (
-              <li key={code}>
-                <button
-                  onClick={() => {
-                    i18n.changeLanguage(code);
-                    document.getElementById("lang-menu")?.classList.add("hidden");
-                  }}
-                  className="flex items-center w-full px-4 py-2 hover:bg-gray-100"
+        {/* Mobile Menu Dropdown */}
+        {isMobileMenuOpen && (
+          <div className="absolute top-16 left-0 w-full bg-white border-t border-gray-200 shadow-md md:hidden z-50">
+            <ul className="flex flex-col px-6 py-4 space-y-3 text-gray-700 font-medium">
+              {navItems.map((item, index) => (
+                <a
+                  key={index}
+                  href={item.href}
+                  {...(item.external
+                    ? { target: "_blank", rel: "noopener noreferrer" }
+                    : {})}
+                  className="text-sm hover:underline"
                 >
-                  <img
-                    src={`https://flagcdn.com/w20/${flag}.png`}
-                    alt={label}
-                    className="mr-2"
-                  />
-                  {label}
-                </button>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </div>
-
-      {/* Mobile Menu Toggle */}
-      <button
-        className="md:hidden text-gray-600 text-2xl"
-        onClick={() => setMobileMenuOpen(!isMobileMenuOpen)}
-        aria-label="Menu"
-      >
-        {isMobileMenuOpen ? <FaTimes /> : <FaBars />}
-      </button>
-
-      {/* Mobile Menu Dropdown */}
-      {isMobileMenuOpen && (
-        <div className="absolute top-16 left-0 w-full bg-white border-t border-gray-200 shadow-md md:hidden z-50">
-          <ul className="flex flex-col px-6 py-4 space-y-3 text-gray-700 font-medium">
-  {navItems.map((item) => (
-    <li key={item.href}>
-      <a href={item.href}>{item.label}</a>
-    </li>
-  ))}
-          </ul>
-        </div>
-      )}
-    </nav>
+                  {item.label}
+                </a>
+              ))}
+            </ul>
+          </div>
+        )}
+      </nav>
       {/* NAVIGATION OMITTED FOR BREVITY */}
 
       <motion.header
@@ -360,45 +370,14 @@ const App = () => {
         <div className="max-w-6xl mx-auto px-6 py-12">
           <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-12 md:gap-16 border-b border-green-600 pb-8">
             {/* Coluna Institucional */}
-<div className="md:w-1/2 space-y-3">
-  <h3 className="text-2xl font-bold text-white">
-    {t("footer.title")}
-  </h3>
-  <p className="text-gray-100 leading-relaxed">
-    {t("footer.description")}
-  </p>
-  
-  {/* Redes Sociais */}
-  <div className="mt-4 flex gap-4">
-    <a
-      href="https://www.instagram.com/dkdevssolucoesdigitais"
-      target="_blank"
-      rel="noopener noreferrer"
-      aria-label="Instagram"
-      className="text-green-200 hover:text-white transition-colors duration-300 text-xl"
-    >
-      <FaInstagram />
-    </a>
-    <a
-      href="https://www.linkedin.com/company/dkdevs-solucoes"
-      target="_blank"
-      rel="noopener noreferrer"
-      aria-label="LinkedIn"
-      className="text-green-200 hover:text-white transition-colors duration-300 text-xl"
-    >
-      <FaLinkedinIn />
-    </a>
-    <a
-      href="https://www.facebook.com/profile.php?id=61573926364558"
-      target="_blank"
-      rel="noopener noreferrer"
-      aria-label="Facebook"
-      className="text-green-200 hover:text-white transition-colors duration-300 text-xl"
-    >
-      <FaFacebookF />
-    </a>
-  </div>
-</div>
+            <div className="md:w-1/2 space-y-3">
+              <h3 className="text-2xl font-bold text-white">
+                {t("footer.title")}
+              </h3>
+              <p className="text-gray-100 leading-relaxed">
+                {t("footer.description")}
+              </p>
+            </div>
 
             {/* Coluna de Links */}
             <div className="md:w-1/2 space-y-4">
@@ -436,6 +415,14 @@ const App = () => {
                 <a href="#blip" className="hover:underline hover:text-white">
                   {t("footer.partner")}
                 </a>
+                <a
+                  href="https://monitor.dkdevs.com.br/status/services"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:underline hover:text-white"
+                >
+                  Status
+                </a>
               </div>
             </div>
           </div>
@@ -445,7 +432,6 @@ const App = () => {
             © {new Date().getFullYear()} DKdevs. {t("footer.rights")}
           </div>
         </div>
-
       </footer>
 
       <a
