@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import App from './App';
-import PrivacyPolicy from './pages/PrivacyPolicy'; // crie este componente
+import PrivacyPolicy from './pages/PrivacyPolicy';
 import Status from './pages/StatusSection';
 import './index.css';
 
