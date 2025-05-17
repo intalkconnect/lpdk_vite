@@ -370,7 +370,7 @@ const App = () => {
   {/* Redes Sociais */}
   <div className="mt-4 flex gap-4">
     <a
-      href="https://www.instagram.com/suaempresa"
+      href="https://www.instagram.com/dkdevssolucoesdigitais"
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Instagram"
@@ -379,7 +379,7 @@ const App = () => {
       <FaInstagram />
     </a>
     <a
-      href="https://www.linkedin.com/in/suaempresa"
+      href="https://www.linkedin.com/company/dkdevs-solucoes"
       target="_blank"
       rel="noopener noreferrer"
       aria-label="LinkedIn"
@@ -388,7 +388,7 @@ const App = () => {
       <FaLinkedinIn />
     </a>
     <a
-      href="https://www.facebook.com/suaempresa"
+      href="https://www.facebook.com/profile.php?id=61573926364558"
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Facebook"
