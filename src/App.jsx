@@ -35,6 +35,7 @@ const App = () => {
   { href: "#empresas", label: t("nav.clients") },
   { href: "#produtos", label: t("nav.products") },
   { href: "#blip", label: t("nav.partner") },
+  { href: "/status", label: "Status" },
 ];
 
   return (
