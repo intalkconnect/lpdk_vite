@@ -20,4 +20,4 @@ const PrivacyPolicy = () => {
   );
 };
 
-export default PrivacyPolicy; // 🔥 ESSA LINHA É ESSENCIAL
+export default PrivacyPolicy;
