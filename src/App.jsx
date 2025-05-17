@@ -359,44 +359,45 @@ const App = () => {
         <div className="max-w-6xl mx-auto px-6 py-12">
           <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-12 md:gap-16 border-b border-green-600 pb-8">
             {/* Coluna Institucional */}
-            <div className="md:w-1/2 space-y-3">
-              <h3 className="text-2xl font-bold text-white">
-                {t("footer.title")}
-              </h3>
-              <p className="text-gray-100 leading-relaxed">
-                {t("footer.description")}
-              </p>
-              {/* Redes Sociais */}
-<div className="mt-8 flex justify-center gap-6">
-  <a
-    href="https://www.instagram.com/suaempresa"
-    target="_blank"
-    rel="noopener noreferrer"
-    aria-label="Instagram"
-    className="text-green-200 hover:text-white transition-colors duration-300 text-xl"
-  >
-    <FaInstagram />
-  </a>
-  <a
-    href="https://www.linkedin.com/in/suaempresa"
-    target="_blank"
-    rel="noopener noreferrer"
-    aria-label="LinkedIn"
-    className="text-green-200 hover:text-white transition-colors duration-300 text-xl"
-  >
-    <FaLinkedinIn />
-  </a>
-  <a
-    href="https://www.facebook.com/suaempresa"
-    target="_blank"
-    rel="noopener noreferrer"
-    aria-label="Facebook"
-    className="text-green-200 hover:text-white transition-colors duration-300 text-xl"
-  >
-    <FaFacebookF />
-  </a>
+<div className="md:w-1/2 space-y-3">
+  <h3 className="text-2xl font-bold text-white">
+    {t("footer.title")}
+  </h3>
+  <p className="text-gray-100 leading-relaxed">
+    {t("footer.description")}
+  </p>
+  
+  {/* Redes Sociais */}
+  <div className="mt-4 flex gap-4">
+    <a
+      href="https://www.instagram.com/suaempresa"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Instagram"
+      className="text-green-200 hover:text-white transition-colors duration-300 text-xl"
+    >
+      <FaInstagram />
+    </a>
+    <a
+      href="https://www.linkedin.com/in/suaempresa"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="LinkedIn"
+      className="text-green-200 hover:text-white transition-colors duration-300 text-xl"
+    >
+      <FaLinkedinIn />
+    </a>
+    <a
+      href="https://www.facebook.com/suaempresa"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Facebook"
+      className="text-green-200 hover:text-white transition-colors duration-300 text-xl"
+    >
+      <FaFacebookF />
+    </a>
+  </div>
 </div>
-            </div>
 
             {/* Coluna de Links */}
             <div className="md:w-1/2 space-y-4">
