@@ -1,0 +1,62 @@
+{
+  "header": {
+    "title": "Transform your business with digital solutions",
+    "subtitle": "We create personalized experiences with technology, automation, and intelligence."
+  },
+  "nav": {
+    "about": "About us",
+    "specialties": "Specialties",
+    "clients": "Clients",
+    "products": "Products",
+    "partner": "Partner",
+    "quemsomos": "About us"
+  },
+  "specialties": [
+    "Custom chatbot development",
+    "REST and GraphQL APIs",
+    "Scalable AWS infrastructure",
+    "Integrations with Blip and WhatsApp",
+    "Customer service automation",
+    "Dashboards and reports"
+  ],
+  "section": {
+    "ia_title": "AI & Data Intelligence",
+    "ia_description": "We use AI to build intelligent experiences: classifiers, predictive analysis, NLP automation, and integration with advanced language models.",
+    "blip_description_1": "Blip is the leading smart conversation platform empowering businesses to communicate at their full potential.",
+    "blip_description_2": "As an official Blip partner, we offer complete solutions on the platform: from flow design and bot creation to robust integrations with APIs and corporate systems.",
+    "quem_somos_title": "About us",
+    "quem_somos_1": "DKdevs was created with the purpose of going beyond system development. Our commitment is to deeply understand each client’s business, offering solutions that truly align with their goals and challenges.",
+    "quem_somos_2": "We believe our success is only possible when our clients succeed too. That’s why we aim to build trusted relationships by offering technology paired with strategy, delivering real and lasting value.",
+    "quem_somos_3": "More than service providers, we are partners in the digital journey of companies that want to innovate, grow, and better connect with their audiences."
+  },
+  "products": {
+    "farmdesk": {
+      "name": "Farm Desk",
+      "desc": "Extension for Blip Desk that facilitates service in compounding pharmacies, optimizing message flow and order organization.",
+      "cta": "View on Chrome Web Store"
+    },
+    "salusapi": {
+      "name": "SalusAPI",
+      "desc": "Receive prescriptions and budgets via image or PDF and automatically convert them into structured JSON. Ideal for compounding pharmacies seeking to speed up service, integrate with chatbots, and reduce manual rework.",
+      "cta": "Request a Demo"
+    }
+  },
+  "footer": {
+    "title": "DKdevs Digital Solutions",
+    "description": "Connecting systems, people, and data with efficiency and intelligence.",
+    "navigation": "Navigation",
+    "about": "About Us",
+    "specialties": "Specialties",
+    "ai": "AI",
+    "clients": "Clients",
+    "products": "Products",
+    "partner": "Partner",
+    "rights": "All rights reserved."
+  },
+  "clients": {
+    "boasafra": "🌱 Leading seed producer in Brazil!",
+    "quality": "🥇The #1 in Gourmet Formulas",
+    "lantana": "📚Reference in nutrition in Brazil",
+    "lecharpe": "Customized Scarves."
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "header": {
+    "title": "Transforma tu negocio con soluciones digitales",
+    "subtitle": "Creamos experiencias personalizadas con tecnología, automatización e inteligencia."
+  },
+  "nav": {
+    "about": "Quiénes somos",
+    "specialties": "Especialidades",
+    "clients": "Clientes",
+    "products": "Productos",
+    "partner": "Socio",
+    "quemsomos": "Quiénes somos"
+  },
+  "specialties": [
+    "Creación de chatbots personalizados",
+    "APIs REST y GraphQL",
+    "Infraestructura escalable en AWS",
+    "Integraciones con Blip y WhatsApp",
+    "Automatización del servicio",
+    "Paneles e informes"
+  ],
+  "section": {
+    "ia_title": "IA e Inteligencia de Datos",
+    "ia_description": "Usamos IA para construir experiencias inteligentes: clasificadores, análisis predictivo, automatizaciones con NLP e integración con modelos de lenguaje avanzados.",
+    "blip_description_1": "Blip es la plataforma líder en conversaciones inteligentes que permite a las empresas comunicarse en su máximo potencial.",
+    "blip_description_2": "Como socios oficiales de Blip, ofrecemos soluciones completas en la plataforma: desde el diseño de flujos y creación de bots hasta integraciones robustas con APIs y sistemas corporativos.",
+    "quem_somos_title": "Quiénes somos",
+    "quem_somos_1": "DKdevs fue creada con el propósito de ir más allá del desarrollo de sistemas. Nuestro compromiso es entender profundamente el negocio de cada cliente, ofreciendo soluciones que realmente tengan sentido para sus objetivos y desafíos.",
+    "quem_somos_2": "Creemos que nuestro éxito solo es posible cuando el cliente también tiene éxito. Por eso, buscamos construir relaciones de confianza, ofreciendo tecnología aliada a la estrategia, entregando valor real y duradero.",
+    "quem_somos_3": "Más que proveedores, somos socios en el viaje digital de empresas que desean innovar, crecer y conectarse mejor con sus públicos."
+  },
+  "products": {
+    "farmdesk": {
+      "name": "Farm Desk",
+      "desc": "Extensión para Blip Desk que facilita la atención en farmacias de manipulación, optimizando el flujo de mensajes y la organización de pedidos.",
+      "cta": "Ver en Chrome Web Store"
+    },
+    "salusapi": {
+      "name": "SalusAPI",
+      "desc": "Recibe recetas y presupuestos por imagen o PDF y conviértelos automáticamente en JSON estructurado. Ideal para farmacias magistrales que desean acelerar el servicio, integrarse con chatbots y reducir el trabajo manual.",
+      "cta": "Solicitar Demostración"
+    }
+  },
+  "footer": {
+    "title": "DKdevs Soluciones Digitales",
+    "description": "Conectando sistemas, personas y datos con eficiencia e inteligencia.",
+    "navigation": "Navegación",
+    "about": "Quiénes Somos",
+    "specialties": "Especialidades",
+    "ai": "IA",
+    "clients": "Clientes",
+    "products": "Productos",
+    "partner": "Socio",
+    "rights": "Todos los derechos reservados."
+  },
+  "clients": {
+    "boasafra": "🌱 ¡Líder en producción de semillas en Brasil!",
+    "quality": "🥇La #1 en Fórmulas Gourmet",
+    "lantana": "📚Referencia en nutrición en Brasil",
+    "lecharpe": "Pañuelos Personalizados."
+  }
+}
