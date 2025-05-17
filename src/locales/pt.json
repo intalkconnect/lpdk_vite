@@ -14,16 +14,16 @@
   "specialties": [
     "Criação de chatbots personalizados",
     "APIs REST e GraphQL",
-    "Infraestrutura AWS escalável",
+    "Infraestrutura escalável na AWS",
     "Integrações com Blip e WhatsApp",
-    "Automação de atendimento",
+    "Automatização do atendimento",
     "Dashboards e relatórios"
   ],
   "section": {
     "ia_title": "IA & Inteligência de Dados",
     "ia_description": "Utilizamos IA para construir experiências inteligentes: classificadores, análises preditivas, automações com NLP e integração com modelos de linguagem avançados.",
     "blip_description_1": "A Blip é a plataforma de conversas inteligentes líder de mercado que empodera as empresas a conversarem no seu máximo potencial.",
-    "blip_description_2": "Como parceiro oficial da Blip, oferecemos soluções completas na plataforma: desde o desenho de fluxos e criação de bots até integrações robustas com APIs e sistemas corporativos.",
+    "blip_description_2": "Como parceiros oficiais da Blip, oferecemos soluções completas na plataforma: desde o desenho de fluxos e criação de bots até integrações robustas com APIs e sistemas corporativos.",
     "quem_somos_title": "Quem somos",
     "quem_somos_1": "A DKdevs foi criada com o propósito de ir além do desenvolvimento de sistemas. Nosso compromisso é entender profundamente o negócio de cada cliente, oferecendo soluções que realmente fazem sentido para seus objetivos e desafios.",
     "quem_somos_2": "Acreditamos que o nosso sucesso só é possível quando o cliente também tem sucesso. Por isso, buscamos construir relações de confiança, oferecendo tecnologia aliada à estratégia, entregando valor real e duradouro.",
@@ -32,7 +32,7 @@
   "products": {
     "farmdesk": {
       "name": "Farm Desk",
-      "desc": "Extensão para Blip Desk que facilita o atendimento em farmácias de manipulação, otimizando o fluxo de mensagens e organização de pedidos.",
+      "desc": "Extensão para Blip Desk que facilita o atendimento em farmácias de manipulação, otimizando o fluxo de mensagens e a organização de pedidos.",
       "cta": "Ver na Chrome Web Store"
     },
     "salusapi": {
@@ -42,10 +42,16 @@
     }
   },
   "footer": {
-    "company": "DKdevs Soluções Digitais",
-    "slogan": "Conectando sistemas, pessoas e dados com eficiência e inteligência.",
-    "copyright": "© 2025 DKdevs. Todos os direitos reservados.",
-    "navigation": "Navegação"
+    "title": "DKdevs Soluções Digitais",
+    "description": "Conectando sistemas, pessoas e dados com eficiência e inteligência.",
+    "navigation": "Navegação",
+    "about": "Quem Somos",
+    "specialties": "Especialidades",
+    "ai": "IA",
+    "clients": "Clientes",
+    "products": "Produtos",
+    "partner": "Parceiro",
+    "rights": "Todos os direitos reservados."
   },
   "clients": {
     "boasafra": "🌱 Líder na produção de sementes no Brasil!",
