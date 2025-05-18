@@ -33,10 +33,7 @@ const App = () => {
     { href: "#produtos", label: t("nav.products") },
     { href: "#blip", label: t("nav.partner") },
     {
-      href: "https://monitor.dkdevs.com.br/status/services",
-      label: "Status",
-      external: true,
-    },
+      href: "/status", label: "Status"},
   ];
 
   return (
