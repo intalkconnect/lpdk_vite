@@ -53,11 +53,21 @@ const App = () => {
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex space-x-6 text-sm font-medium text-gray-600">
-          {navItems.map((item) => (
-            <li key={item.href}>
-              <a href={item.href}>{item.label}</a>
-            </li>
-          ))}
+{navItems.map(item => (
+  <a
+    href={item.href}
+    target={item.external ? "_blank" : undefined}
+    rel={item.external ? "noopener noreferrer" : undefined}
+    onClick={(e) => {
+      if (!item.external && item.href.startsWith("#")) {
+        e.preventDefault();
+        scrollToSection(item.href); // ou smoothScroll etc.
+      }
+    }}
+  >
+    {item.label}
+  </a>
+))}
         </ul>
 
         {/* Language Selector (desktop) */}
@@ -129,17 +139,21 @@ const App = () => {
         {isMobileMenuOpen && (
           <div className="absolute top-16 left-0 w-full bg-white border-t border-gray-200 shadow-md md:hidden z-50">
             <ul className="flex flex-col px-6 py-4 space-y-3 text-gray-700 font-medium">
-              {navItems.map((item, index) => (
-                <a
-                  key={index}
-                  href={item.href}
-                  {...(item.external
-                    ? { target: "_blank", rel: "noopener noreferrer" }
-                    : {})}
-                  className="text-sm hover:underline"
-                >
-                  {item.label}
-                </a>
+{navItems.map(item => (
+  <a
+    href={item.href}
+    target={item.external ? "_blank" : undefined}
+    rel={item.external ? "noopener noreferrer" : undefined}
+    onClick={(e) => {
+      if (!item.external && item.href.startsWith("#")) {
+        e.preventDefault();
+        scrollToSection(item.href); // ou smoothScroll etc.
+      }
+    }}
+  >
+    {item.label}
+  </a>
+))}
               ))}
             </ul>
           </div>
