@@ -4,7 +4,7 @@ const StatusSection = () => {
       <h2 className="text-2xl font-bold mb-4 text-center">Status dos Serviços</h2>
       <div className="w-full h-[80vh]">
         <iframe
-          src="https://monitor.dkdevs.com.br/status/services"
+          src="https://services.dkdevs.com.br"
           title="Status"
           className="w-full h-full border-none"
         />
